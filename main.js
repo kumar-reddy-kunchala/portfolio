@@ -57,4 +57,18 @@ const setActiveNav = () => {
 window.addEventListener("scroll", setActiveNav, { passive: true });
 setActiveNav();
 
+document.addEventListener("contextmenu", event => {
+  const target = event.target;
+  if (target instanceof HTMLImageElement && target.alt === "Kumar Reddy Kunchala") {
+    event.preventDefault();
+  }
+});
+
+document.addEventListener("dragstart", event => {
+  const target = event.target;
+  if (target instanceof HTMLImageElement && target.alt === "Kumar Reddy Kunchala") {
+    event.preventDefault();
+  }
+});
+
 document.getElementById("year").textContent = new Date().getFullYear();

@@ -49,9 +49,8 @@ h1,h2,h3,h4{font-family:"Space Grotesk",sans-serif}
 .socials a{width:39px;height:39px;border:1px solid var(--line);display:grid;place-items:center;border-radius:10px;color:var(--muted)}
 .socials a:hover{color:var(--text);border-color:var(--accent);transform:translateY(-2px)}
 .hero-visual{position:relative;min-height:580px;display:grid;place-items:center}
-.profile-frame{width:min(450px,78vw);aspect-ratio:1;border:1px solid var(--line);border-radius:34% 66% 58% 42%/42% 38% 62% 58%;padding:18px;position:relative;overflow:hidden;background:linear-gradient(145deg,rgba(124,140,255,.16),rgba(83,216,198,.04));box-shadow:0 30px 90px rgba(0,0,0,.45)}
-.profile-frame img{width:100%;height:100%;object-fit:cover;border-radius:31% 69% 55% 45%/45% 35% 65% 55%;position:relative;z-index:2;filter:saturate(.92)}
-.frame-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:35px 35px;z-index:3;pointer-events:none}
+.profile-frame{width:min(450px,78vw);aspect-ratio:1;border:none;border-radius:34% 66% 58% 42%/42% 38% 62% 58%;padding:0;position:relative;overflow:hidden;background:none;box-shadow:0 30px 90px rgba(0,0,0,.45)}
+.profile-frame img{width:100%;height:100%;display:block;object-fit:cover;border-radius:31% 69% 55% 45%/45% 35% 65% 55%;position:relative;z-index:2;filter:saturate(.92);user-select:none;-webkit-user-select:none;-webkit-user-drag:none;pointer-events:none}
 .orb{position:absolute;border-radius:50%;filter:blur(1px);opacity:.8}
 .orb-one{width:150px;height:150px;background:rgba(124,140,255,.15);top:10%;right:0}
 .orb-two{width:110px;height:110px;background:rgba(83,216,198,.11);bottom:12%;left:3%}
